@@ -19,11 +19,13 @@ export const Carousel = memo(() => {
     const [
         carouselItems,
         currentItem,
+        itemsPerSlide,
         carouselWrapperRef,
         handlePrevClick,
         handleNextClick,
     ] = useCarousel();
 
+    console.log(itemsPerSlide);
     return (
         <WrapperContainer>
             <CarouselContainer>
@@ -31,7 +33,8 @@ export const Carousel = memo(() => {
                     ref={carouselWrapperRef}
                     translateValue={
                         -currentItem *
-                        (carouselWrapperRef.current?.offsetWidth / 3)
+                        (carouselWrapperRef.current?.offsetWidth /
+                            itemsPerSlide)
                     }
                 >
                     {carouselItems.map((item, index) => (

@@ -6,6 +6,10 @@ export const FindButtonContainer = styled.div`
     justify-self: center;
     width: 90%;
     margin: 70px 60px;
+
+    @media (max-width: 480px) {
+        margin: 50px auto;
+    }
 `;
 
 export const Button = styled.button`
@@ -19,6 +23,10 @@ export const Button = styled.button`
     font-weight: bold;
     letter-spacing: 1px;
     transition: all ease-out 0.5s;
+
+    @media (max-width: 480px) {
+        width: 200px;
+    }
 
     &.margin-left {
         margin-left: 20px;

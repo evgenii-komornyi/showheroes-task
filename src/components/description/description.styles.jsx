@@ -11,12 +11,22 @@ export const ImageBackgroundContainer = styled.div`
     background-image: url(${sectionBg});
     background-size: cover;
     position: relative;
+
+    @media (max-width: 480px) {
+        height: 400px;
+        align-items: flex-start;
+        justify-content: center;
+    }
 `;
 
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 20rem 0 50px;
+
+    @media (max-width: 480px) {
+        padding: 50px;
+    }
 `;
 
 export const ImageBackgroundTitle = styled.h1`
@@ -29,6 +39,10 @@ export const ImageBackgroundTitle = styled.h1`
         text-stroke: 1px #fffeff;
         -webkit-text-stroke: 1px #fffeff;
     }
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+    }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -40,6 +54,13 @@ export const DescriptionContainer = styled.div`
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 25px;
+
+    @media (max-width: 480px) {
+        width: 350px;
+        height: 300px;
+        bottom: -80px;
+        left: 50px;
+    }
 `;
 
 export const DescriptionTitle = styled.h3`

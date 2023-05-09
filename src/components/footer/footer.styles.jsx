@@ -6,6 +6,7 @@ export const FooterContainer = styled.div`
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 9999;
     max-width: 1080px;
     padding: 10px 0;
     height: 80px;
@@ -14,7 +15,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: flex-start;
     padding: 0 30px;
@@ -28,6 +29,11 @@ export const ButtonsContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 60%;
     padding: 10px;
+
+    @media (max-width: 480px) {
+        width: 70%;
+        padding: 0 25px;
+    }
 `;

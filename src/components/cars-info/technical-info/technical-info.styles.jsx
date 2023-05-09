@@ -10,6 +10,10 @@ export const TechnicalInfoContainer = styled.div`
     margin-bottom: 100px;
     color: #7e7e7e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
 `;
 
 export const TechnicalInfoItemContainer = styled.div`

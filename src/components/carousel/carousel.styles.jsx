@@ -33,11 +33,20 @@ export const CarouselWrapper = styled.div`
     display: flex;
     transition: transform 0.5s ease-in-out;
     transform: ${({ translateValue }) => `translateX(${translateValue}px)`};
+
+    @media (max-width: 480px) {
+        flex-wrap: nowrap;
+    }
 `;
 
 export const Card = styled.div`
     flex: 0 0 calc(33.33% - 40px);
     margin: 0 21px;
+
+    @media (max-width: 480px) {
+        flex: 0 0 100%;
+        margin: 0;
+    }
 
     &:hover {
         cursor: pointer;
@@ -174,6 +183,10 @@ export const ButtonsContainer = styled.div`
     flex-direction: row;
     width: 90%;
     top: 50%;
+
+    @media (max-width: 480px) {
+        width: 78%;
+    }
 `;
 
 const ArrowButton = styled.button`

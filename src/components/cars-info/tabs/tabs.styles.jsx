@@ -4,7 +4,7 @@ export const TabsContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px 50px 20px 50px;
+    padding: 50px 20px;
 `;
 
 export const TabButton = styled.button`
@@ -20,7 +20,7 @@ export const TabButton = styled.button`
     border: none;
     margin-left: 40px;
 
-    &:first {
+    &:first-child {
         margin-left: 0;
     }
 
