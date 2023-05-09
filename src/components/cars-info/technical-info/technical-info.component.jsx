@@ -11,10 +11,8 @@ import {
 
 export const TechnicalInfo = () => {
     const {
-        selectedCar: {
-            technicalInfo: { motor, acceleration, test, restoredRange },
-        },
-    } = useCarsStore();
+        technicalInfo: { motor, acceleration, test, restoredRange },
+    } = useCarsStore(state => state.selectedCar);
 
     return (
         <TechnicalInfoContainer>

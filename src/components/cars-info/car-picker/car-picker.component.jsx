@@ -10,7 +10,9 @@ import {
 } from './car-picker.styles';
 
 export const CarPicker = () => {
-    const { selectedCar, selectedColor, image } = useCarsStore();
+    const selectedCar = useCarsStore(state => state.selectedCar);
+    const selectedColor = useCarsStore(state => state.selectedColor);
+    const image = useCarsStore(state => state.image);
 
     return (
         <CarPickerContainer>

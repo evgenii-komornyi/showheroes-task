@@ -8,9 +8,7 @@ import {
 } from './advantages.styles';
 
 export const Advantages = () => {
-    const {
-        selectedCar: { advantages },
-    } = useCarsStore();
+    const { advantages } = useCarsStore(({ selectedCar }) => selectedCar);
 
     return (
         <AdvantagesContainer>
