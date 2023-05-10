@@ -1,6 +1,6 @@
 # ShowHeroes Task
 
-To install this project type in git bash:
+To install this project: type in git bash:
 
 npm install
 
