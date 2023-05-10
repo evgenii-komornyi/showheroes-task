@@ -107,5 +107,6 @@ export const DescriptionButton = styled.button`
 
     &:hover {
         animation-play-state: paused;
+        cursor: pointer;
     }
 `;

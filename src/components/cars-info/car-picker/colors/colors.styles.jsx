@@ -21,6 +21,7 @@ export const ColorImage = styled.img`
     &:hover {
         margin-top: -8px;
         transition: margin-top linear 0.5s;
+        cursor: pointer;
     }
 
     &.selected {

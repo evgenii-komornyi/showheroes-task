@@ -30,6 +30,7 @@ export const TabButton = styled.button`
         background-color: #000000;
         box-shadow: none;
         color: #ffffff;
+        cursor: pointer;
     }
 `;
 
